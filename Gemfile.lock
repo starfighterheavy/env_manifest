@@ -21,7 +21,7 @@ GEM
     equalizer (0.0.11)
     ice_nine (0.11.2)
     multi_json (1.14.1)
-    rake (10.5.0)
+    rake (12.3.3)
     thread_safe (0.3.6)
     virtus (1.0.5)
       axiom-types (~> 0.1)
@@ -35,7 +35,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.17)
   env_manifest!
-  rake (~> 10.0)
+  rake (~> 12.3)
 
 BUNDLED WITH
    1.17.2
