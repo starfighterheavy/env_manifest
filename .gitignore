@@ -6,3 +6,6 @@
 /pkg/
 /spec/reports/
 /tmp/
+
+# Ignore gem builds
+env_manifest-*
