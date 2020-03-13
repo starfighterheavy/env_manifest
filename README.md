@@ -1,8 +1,8 @@
 # EnvManifest
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/env_manifest`. To experiment with that code, run `bin/console` for an interactive prompt.
+EnvManifest was extracted from code already in production use by our clients. Now you can use it too!
 
-TODO: Delete this and the text above, and describe your gem
+Use EnvManifest to keep your various development, testing, staging and production enviroments in sync and consistent.
 
 ## Installation
 
