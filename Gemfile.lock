@@ -1,0 +1,41 @@
+PATH
+  remote: .
+  specs:
+    env_manifest (0.1.0)
+      app_manifest (~> 0.5)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    app_manifest (0.5.0)
+      multi_json (~> 1.0)
+      virtus (~> 1.0)
+    axiom-types (0.1.1)
+      descendants_tracker (~> 0.0.4)
+      ice_nine (~> 0.11.0)
+      thread_safe (~> 0.3, >= 0.3.1)
+    coercible (1.0.0)
+      descendants_tracker (~> 0.0.1)
+    descendants_tracker (0.0.4)
+      thread_safe (~> 0.3, >= 0.3.1)
+    equalizer (0.0.11)
+    ice_nine (0.11.2)
+    multi_json (1.14.1)
+    rake (10.5.0)
+    thread_safe (0.3.6)
+    virtus (1.0.5)
+      axiom-types (~> 0.1)
+      coercible (~> 1.0)
+      descendants_tracker (~> 0.0, >= 0.0.3)
+      equalizer (~> 0.0, >= 0.0.9)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.17)
+  env_manifest!
+  rake (~> 10.0)
+
+BUNDLED WITH
+   1.17.2
