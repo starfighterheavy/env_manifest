@@ -1,6 +1,11 @@
-module EnvSettings
+require 'app_manifest'
+
+module EnvManifest
   class Settings
-    def initialize
+    attr_reader :file_path
+
+    def initialize(file_path)
+      @file_path = file_path
       load_defaults
       validate
     end
@@ -33,7 +38,7 @@ module EnvSettings
     end
 
     def app_json
-      file = File.read(File.join(File.dirname(__FILE__), '../app.json'))
+      file = File.read(file_path)
       JSON.parse(file)
     end
 

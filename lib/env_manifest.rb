@@ -4,7 +4,7 @@ require "env_manifest/settings"
 module EnvManifest
   class Error < StandardError; end
 
-  def self.load
-    Settings.new
+  def self.load(file)
+    Settings.new(file)
   end
 end
