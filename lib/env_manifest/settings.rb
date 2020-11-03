@@ -20,7 +20,7 @@ module EnvManifest
     def load_defaults
       manifest.env.each do |key, value|
         if ENV[key].nil? || ENV[key] == ''
-          ENV[key] = value.value || manifest.environments&.dig(Rails.env)&.env[key].value
+          ENV[key] = value.value || manifest.environments&.dig(Rails.env)&.env&.dig(key)&.value
         end
       end
     end
