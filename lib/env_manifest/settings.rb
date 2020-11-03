@@ -19,7 +19,9 @@ module EnvManifest
 
     def load_defaults
       manifest.env.each do |key, value|
-        ENV[key] = value.value if ENV[key].nil? || ENV[key] == ''
+        if ENV[key].nil? || ENV[key] == ''
+          ENV[key] = value.value || manifest.environments&.dig(Rails.env)&.env[key].value
+        end
       end
     end
 
